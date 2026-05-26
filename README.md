@@ -35,7 +35,7 @@ Frontend system using:
 - JavaScript
 
 ## 🐳 DevOps
-- Docker
+- Docker Engine
 - Docker Compose
 
 ---
