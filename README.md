@@ -1,8 +1,11 @@
-# 🎨 Frontend System (NuxtJS + Docker + Nginx)
+# 🚀 Backend API System (NestJS + MongoDB + Docker)
 
-![Nuxt](https://img.shields.io/badge/Frontend-Nuxt-success)
-![Docker](https://img.shields.io/badge/Deploy-Docker-blue)
-![Nginx](https://img.shields.io/badge/Nginx-ReverseProxy-brightgreen)
+![Nginx](https://img.shields.io/badge/Reverse%20Proxy-Nginx%201.28.0-brightgreen)
+![NestJS](https://img.shields.io/badge/Backend-NestJS%2011.1.24-red)
+![Mongo Express](https://img.shields.io/badge/Admin-Mongo--Express%201.0.2-orange)
+![Docker Engine](https://img.shields.io/badge/Docker%20Engine-27.5.1-blue)
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2.32.4-blue)
+![Swagger](https://img.shields.io/badge/API-Swagger%2011.4.4-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
@@ -16,27 +19,27 @@
 
 # 📌 Overview
 
-Frontend system using:
+Backend REST API system using:
 
-- ⚡ NuxtJS framework
-- 🎨 HTML5 / CSS3 / JavaScript
-- 🌐 Nginx reverse proxy
+- 🚀 NestJS framework
+- 🍃 MongoDB integration
+- 🔐 JWT Authentication
+- 📄 Swagger API documentation
 - 🐳 Docker containerization
 
 ---
 
 # 🧱 Tech Stack
 
-## 🎨 Frontend
-- NuxtJS
-- HTML5
-- CSS3
-- JavaScript
+## ⚙️ Backend
+- NestJS
+- REST API
+- JWT Authentication
+- Swagger
 
 ## 🐳 DevOps
 - Docker
 - Docker Compose
-- Nginx
 
 ---
 
