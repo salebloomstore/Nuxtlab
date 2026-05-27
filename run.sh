@@ -13,6 +13,8 @@ source /var/www/cache/.env
 
 cd /var/www/app
 
+echo "🔧 Ensuring .env..."
+
 cat > .env << EOF
 NESTJS_WEBAPI_IO_DATA=${NESTJS_WEBAPI_IO_DATA}
 EOF
