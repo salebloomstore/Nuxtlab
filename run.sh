@@ -25,6 +25,7 @@ echo "📦 Installing dependencies..."
 
 # TypeScript toolchain
 npm install -D typescript@5.9.3 ts-node@10.9.2 @types/node@24.12.4
+npm install nuxt@latest
 
 npm install
 
