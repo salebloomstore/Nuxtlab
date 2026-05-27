@@ -13,9 +13,9 @@ source /var/www/cache/.env
 
 cd /var/www/app
 
-# cat > .env << EOF
-# NESTJS_WEBAPI_IO_DATA=${NESTJS_WEBAPI_IO_DATA}
-# EOF
+cat > .env << EOF
+NESTJS_WEBAPI_IO_DATA=${NESTJS_WEBAPI_IO_DATA}
+EOF
 
 # =========================
 # BUILD
