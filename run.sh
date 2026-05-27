@@ -24,10 +24,10 @@ EOF
 echo "📦 Installing dependencies..."
 
 # TypeScript toolchain
-npm install
+pnpm install
 
 echo "📦 Building project..."
-npm run build
+pnpm run build
 
 # =========================
 # RUN
