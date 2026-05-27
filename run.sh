@@ -21,8 +21,10 @@ EOF
 # BUILD
 # =========================
 
-echo "📦 Installing dependencies..."
+echo "📦 Installing pnpm..."
 npm install -g pnpm@11.1.3
+
+echo "📦 Installing dependencies..."
 pnpm install
 
 echo "📦 Building project..."
