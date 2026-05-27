@@ -17,9 +17,7 @@ echo "🚀 Checking NuxtJS project..."
 if [ ! -f app/package.json ]; then
   echo "📦 Creating Nuxt project..."
 
-  npm create nuxt@latest app <<EOF
-
-EOF
+  printf "y\nui\n0\n0\ny\nn\n" | npm create nuxt@latest app
 
   cd app
 
@@ -71,4 +69,4 @@ npm run build
 
 echo "🚀 Starting NuxtJS..."
 
-npm run start:prod
+node .output/server/index.mjs
