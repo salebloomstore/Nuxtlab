@@ -17,7 +17,7 @@ echo "🚀 Checking NuxtJS project..."
 if [ ! -f app/package.json ]; then
   echo "📦 Creating Nuxt project..."
 
-  npx nuxi@latest init app --package-manager npm
+  npx nuxi@latest init app --template minimal --package-manager npm --no-git
 
   cd app
 
