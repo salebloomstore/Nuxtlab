@@ -22,8 +22,7 @@ EOF
 # =========================
 
 echo "📦 Installing dependencies..."
-
-# TypeScript toolchain
+npm install -g pnpm@11.1.3
 pnpm install
 
 echo "📦 Building project..."
