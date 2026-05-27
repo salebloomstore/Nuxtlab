@@ -21,7 +21,7 @@ services:
   nuxtjs-webgui-io:
     build: .
     container_name: ${APP_NAME}_nuxtjs-webgui-io
-    restart: always
+    # restart: always
     ports:
       - ${NUXTJS_WEBAPI_IO_PORT}:3000
     working_dir: /var/www/app
