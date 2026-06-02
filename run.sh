@@ -23,9 +23,6 @@ EOF
 # BUILD
 # =========================
 
-echo "📦 Installing pnpm..."
-npm install -g pnpm@11.1.3
-
 echo "📦 Installing dependencies..."
 pnpm install
 

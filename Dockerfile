@@ -8,5 +8,6 @@ RUN apt-get update && apt-get install -y bash
 COPY run.sh /run.sh
 COPY .env /var/www/cache/.env
 RUN chmod +x /run.sh
+RUN npm install -g pnpm@11.1.3
 EXPOSE ${PORT_OF_NUXTJS}
 CMD ["/run.sh"]
