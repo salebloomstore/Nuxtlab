@@ -37,4 +37,4 @@ pnpm run build
 # =========================
 
 echo "🚀 Starting NuxtJS..."
-node .output/server/index.mjs
+PORT=${PORT_OF_NUXTJS} node .output/server/index.mjs
