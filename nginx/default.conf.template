@@ -1,5 +1,5 @@
 server {
-    listen 80;
+    listen ${PORT_OF_NGINXE};
 
     server_name _;
 
@@ -7,7 +7,7 @@ server {
     # NUXTJS GUI
     # =====================================================
     location / {
-        proxy_pass http://nuxtjs-webgui-io:3000;
+        proxy_pass http://nuxtjs-webgui-io:${PORT_OF_NUXTJS};
 
         proxy_http_version 1.1;
 

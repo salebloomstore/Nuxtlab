@@ -23,7 +23,7 @@ services:
     container_name: ${APP_NAME}_nuxtjs-webgui-io
     # restart: always
     ports:
-      - ${NUXTJS_WEBAPI_IO_PORT}:3000
+      - ${NUXTJS_WEBAPI_IO_PORT}:${PORT_OF_NUXTJS}
     working_dir: /var/www/app
     volumes:
       # Source code bind mount (dev-friendly)
@@ -40,10 +40,10 @@ services:
     container_name: ${APP_NAME}_nginxe-server-fe
     restart: always
     ports:
-      - ${NGINXE_SERVER_FE_PORT}:80
+      - ${NGINXE_SERVER_FE_PORT}:${PORT_OF_NGINXE}
     volumes:
       # Nginx configuration
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template
     env_file: .env
     depends_on:
       - nuxtjs-webgui-io
