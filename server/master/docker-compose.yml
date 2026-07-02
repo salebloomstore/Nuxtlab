@@ -6,7 +6,7 @@
 # - Nginx reverse proxy
 # =====================================================
 
-name: beldam-nuxtjs-webapi-io
+name: beldam-nuxtjs-webgui-io
 
 x-nginx-image: &nginx-image nginx:1.31.1@sha256:5aca99593157f4ae539a5dec1092a0ad8762f8e2eb1789085a13a0f5622369f6
 
@@ -18,12 +18,12 @@ services:
   # =====================================================
   # NUXTJS BACKEND APPLICATION
   # =====================================================
-  beldam-nuxtjs-webapi-io:
+  beldam-nuxtjs-webgui-io:
     build: .
-    container_name: ${APP_NAME}_nuxtjs-webapi-io
+    container_name: ${APP_NAME}_nuxtjs-webgui-io
     restart: always
     ports:
-      - ${NUXTJS_WEBAPI_IO_PORT}:${PORT_OF_NUXTJS}
+      - ${NUXTJS_WEBGUI_IO_PORT}:${PORT_OF_NUXTJS}
     working_dir: /var/www/app
     volumes:
       # Source code bind mount (dev-friendly)
@@ -35,17 +35,17 @@ services:
   # =====================================================
   # NGINX REVERSE PROXY
   # =====================================================
-  beldam-nginxe-server-be:
+  beldam-nginxe-server-fe:
     image: *nginx-image
-    container_name: ${APP_NAME}_nginxe-server-be
+    container_name: ${APP_NAME}_nginxe-server-fe
     restart: always
     ports:
-      - ${NGINXE_SERVER_BE_PORT}:${PORT_OF_NGINXE}
+      - ${NGINXE_SERVER_FE_PORT}:${PORT_OF_NGINXE}
     volumes:
       # Nginx configuration
       - ../nginx/default.conf.template:/etc/nginx/templates/default.conf.template
     env_file: ../../.env
     depends_on:
-      - beldam-nuxtjs-webapi-io
+      - beldam-nuxtjs-webgui-io
     networks:
       - master-netwrk
