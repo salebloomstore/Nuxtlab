@@ -1,4 +1,4 @@
-# 🚀 Backend API System (NuxtJS + MongoDB + Docker)
+# 🚀 Frontend API System (NuxtJS + MongoDB + Docker)
 
 ![Nginx](https://img.shields.io/badge/Reverse%20Proxy-Nginx%201.31.1-brightgreen)
 <!-- ![Nuxtjs](https://img.shields.io/badge/Backend-Nuxtjs%2011.0.1-red) -->
