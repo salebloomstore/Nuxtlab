@@ -12,12 +12,9 @@
 echo "📦 Installing dependencies..."
 pnpm install --frozen-lockfile
 
-echo "📦 Building project..."
-pnpm run build
-
 # =========================
 # RUN
 # =========================
 
 echo "🚀 Starting NuxtJS..."
-PORT=${PORT_OF_NUXTJS} node .output/server/index.mjs
+PORT=${PORT_OF_NUXTJS} pnpm run dev
