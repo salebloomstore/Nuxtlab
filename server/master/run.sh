@@ -10,10 +10,15 @@
 # =========================
 
 echo "📦 Installing dependencies..."
-pnpm ci
+pnpm install --frozen-lockfile
 
 echo "📦 Building project..."
 pnpm run build
+
+echo "📂 Checking build output..."
+ls -la
+ls -la .output || true
+ls -la .output/server || true
 
 # =========================
 # RUN
