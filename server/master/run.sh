@@ -10,14 +10,14 @@
 # =========================
 
 echo "📦 Installing dependencies..."
-npm ci
+pnpm ci
 
 echo "📦 Building project..."
-npm run build
+pnpm run build
 
 # =========================
 # RUN
 # =========================
 
 echo "🚀 Starting NestJS..."
-npm run start:prod
+PORT=${PORT_OF_NUXTJS} node .output/server/index.mjs
