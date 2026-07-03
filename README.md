@@ -1,7 +1,7 @@
 # 🚀 Frontend API System (NuxtJS + Docker)
 
 ![Nginx](https://img.shields.io/badge/Reverse%20Proxy-Nginx%201.31.1-brightgreen)
-![Nuxtjs](https://img.shields.io/badge/Backend-Nuxtjs%204.4.8-red)
+![NuxtJS](https://img.shields.io/badge/Frontend-Nuxt%204.4.8-white)
 ![Docker Engine](https://img.shields.io/badge/Docker%20Engine-28.5.2-blue)
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-v2.40.3-blue)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
